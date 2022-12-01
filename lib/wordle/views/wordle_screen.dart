@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wordle/wordle/wordle.dart';
+import 'dart:math';
 
 enum GameStatus { playing, submitting, lost, won }
 
@@ -26,6 +27,8 @@ class _WordleScreenState extends State<WordleScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(actions: []),
+    )
   }
 }

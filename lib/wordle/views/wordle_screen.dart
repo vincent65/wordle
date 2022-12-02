@@ -43,7 +43,15 @@ class _WordleScreenState extends State<WordleScreen> {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [],
+        children: [
+          Board(board: _board),
+          const SizedBox(height: 80),
+          Keyboard(
+            onDeleteTapped: _onDeleteTapped,
+            onKeyTapped: _onKeyTapped,
+            onEnterTapped: _onEnterTapped,
+          ),
+        ],
       ),
     );
   }

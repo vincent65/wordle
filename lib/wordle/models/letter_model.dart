@@ -21,11 +21,11 @@ class Letter extends Equatable {
       case LetterStatus.initial:
         return Colors.transparent;
       case LetterStatus.notInWord:
-        return notInWordColor;
+        return cNotInWorld;
       case LetterStatus.inWord:
-        return inWordColor;
+        return cInWorld;
       case LetterStatus.correct:
-        return correctColor;
+        return cCorrect;
     }
   }
 
